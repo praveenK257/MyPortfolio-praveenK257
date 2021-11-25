@@ -1,0 +1,250 @@
+*{
+    margin: 2px;
+    font-family: 'Cairo', sans-serif;
+}
+
+body{
+    background-color: rgb(32, 30, 30);
+}
+
+header,footer{
+	overflow: auto;
+}
+
+h1{
+    font-size: 40px;
+}
+
+h2{
+    font-size: 27px;
+}
+
+nav{
+	padding: 2% 5%; 
+    margin: 0 auto;
+}
+
+.topBar{
+    text-align: center;    
+    overflow: hidden;
+    right: 0;
+    position: relative;
+}
+
+.topBar a{
+    color:rgb(6, 175, 6);
+    text-align: center;
+    display: inline-block;
+    margin: 0 auto;
+    padding: 14px 40px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight:bolder;
+}
+
+.topBar a:hover{
+    background-color:white;
+    color: black;
+}
+
+.current{
+    background-color: white;
+}
+
+main{
+    background-color: white;
+    padding-bottom: 1px;
+}
+
+.aboutMe{
+    text-align: center;
+}
+
+.aboutMe h1{
+    color: rgb(6, 175, 6);
+    padding-top: 25px;
+}
+
+.aboutMe h2{
+    color: rgb(6, 175, 6);
+    padding-top: 25px;
+    font-size: 30px;
+}
+
+.aboutMe img{
+    border: 4px rgb(31, 30, 30) inset;
+    transition: 100ms;
+}
+.aboutMe img:hover{
+    border-style: outset;
+    border-color: rgb(6, 175, 6);
+}
+
+.aboutMe p{
+    font-size: 25px;
+    color: rgb(58, 54, 54);
+    margin: 0 50px;
+    padding-bottom: 40px;
+}
+
+.skill-button, .exp-button{
+    display: inline-block;
+	font-size: 30px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(29, 28, 28);
+    margin: auto 43%;
+	border: 2px solid rgb(0, 0, 0);
+	padding: 6px 20px;
+	background-color: rgb(6, 175, 6); 
+    position: relative;
+}
+
+.skill-button:hover, .exp-button:hover{
+    color: rgb(6, 175, 6);
+    background-color: black;
+    transition: 200ms;
+}
+
+.skills,.projects{
+    display: flex;
+    margin: 2% 1%;
+    border: 3px solid rgb(36, 34, 34);
+    padding: 20px;
+}
+
+.skill-button:hover + .skills,.exp-button:hover + .skills{
+    border-color:rgb(255, 115, 0);
+    transition: 200ms;
+}
+
+.projects{
+    border: none;
+    padding: 20px;
+}
+
+.column{
+    font-size: 25px;
+    margin: 0 auto;
+    padding: 10px auto;
+}
+
+.column-projects{
+    margin: auto 4%;
+    padding: auto 2px;
+    border: 2px solid black;
+    position: relative;
+}
+
+.column h2{
+    color: rgb(6, 175, 6);
+}
+
+.column-projects h2{
+    color: rgb(6, 175, 6);
+    text-align: center;
+}
+
+.column ul{
+    color: rgb(36, 34, 34);
+}
+
+.column ul a{
+    text-decoration: none;
+    color: rgb(36, 34, 34);
+}
+
+.column ul a:hover{
+    color: blue;
+}
+
+.paragraph{
+    color: rgb(58, 54, 54);;
+    font-size: 18px;
+    text-align: left;
+    padding: 0 5%;
+}
+
+.column-projects:hover{
+    background-color: black;
+    border-color: rgb(6, 165, 6);
+    transition: 500ms;
+}
+
+.column-projects:hover  .paragraph{
+    color: white;
+}
+
+.link{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.exp-button{
+    margin: auto 41%;
+}
+
+footer{
+    background-color:white;
+    padding: 3px;    
+}
+
+footer span{
+    color: rgb(6, 165, 6);
+}
+
+@media screen and (max-width: 600px){
+    .topBar a{
+        display: block;
+        margin: auto 70px;
+    }
+    .aboutMe h1{
+        font-size: 30px;
+    }
+    .aboutMe p{
+        text-align: justify;
+        font-size: 20px;
+        margin: 0 30px;
+        padding-bottom: 40px;
+    }
+    
+    .skill-button, .exp-button{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin: auto 100px;
+    }
+    
+    .skills{
+        display: block;
+    }
+
+    .column{
+        text-align: center;
+        margin: 20px;
+    }
+    .column ul{
+        text-align: left;
+    }
+
+    .column ul li a{
+        color: rgb(0, 0, 235);
+    }
+    .exp-button{
+        margin-top: 50px;
+    }
+       
+    .projects{
+        display: block;
+    }
+    .column-projects{
+        margin: 10px auto;
+    }
+    .mailId{
+        font-size: 20px;
+        padding-right: 20px;
+    }
+}
